@@ -29,7 +29,7 @@ app.use("/uploads/product",express.static("uploads/product"))
 // app.listen(process.env.PORT) // process key fix hai .env file hai PORT  ye portname hai 
 // app.listen("8000") .env folder create karne ke baad hame port name declare is tarah se nahi karna hai 
                          //Ip              dbname
-mongoose.connect(`mongodb://127.0.0.1:27017/ecomfurniture`)
+mongoose.connect(`mongodb+srv://aashish:aashishDb6759@ecommerceapp.mclonqu.mongodb.net/?appName=EcommerceApp`)
 .then( async (res)=>{
 
     let checkAdmin = await adminModel.find()
